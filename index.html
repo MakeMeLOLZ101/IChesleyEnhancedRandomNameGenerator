@@ -1,0 +1,35 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Name Generator</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Random Name Generator</h1>
+        
+        <div class="input-section">
+            <input type="text" id="nameInput" placeholder="Enter a name">
+            <button id="addName">Add Name</button>
+        </div>
+
+        <div class="name-list" id="nameList">
+        </div>
+
+        <button id="pickRandom">Pick Random Name</button>
+        
+        <div class="selected-name" id="selectedName" style="display: none;"></div>
+
+        <div class="group-controls">
+            <input type="number" id="peoplePerGroup" placeholder="People per group" min="1">
+            <input type="number" id="numberOfGroups" placeholder="Number of groups" min="1">
+            <button id="generateGroups">Generate Groups</button>
+        </div>
+
+        <div class="results-section" id="results">
+        </div>
+    </div>
+    <script src="./scripts/app.js"></script>
+</body>
+</html>
